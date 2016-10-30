@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_9" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<welcome-file-list>
+		<welcome-file>form.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>Ch3 Beer</servlet-name>
+		<servlet-class>com.sogou.imeda.betty.web.BeerSelect</servlet-class> <!-- servlet类文件的完全限定名称 -->
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>Ch3 Beer</servlet-name>
+		<url-pattern>/SelectBeer.do</url-pattern> <!-- 客户访问的名称 -->
+	</servlet-mapping>
+</web-app>
+	
